@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+	
+	<div class="container well" id="sha">
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<img src="img/avatar.png" class="img-responsive" id="avatar">
+			</div>
+		</div>
+
+		<form action="check.php" class="login" method="POST" role="form">
+			<div class="form-group">
+				<input type="email" name="email" placeholder="Correo electrónico" id="inputEmail" class="form-control" value="" required="required" title="">
+			</div>
+			<div class="form-group">
+				<input type="password" name="password" placeholder="Contraseña" id="inputPassword" class="form-control" required="required" title="">
+			</div>
+
+			<button type="submit" class="btn btn-large btn-block btn-primary">Iniciar sesion</button>
+
+			<div class="checkbox">
+				<div class="checkbox">
+					<label>
+						<input name="remember" type="checkbox" value="1">
+						No cerrar sesión
+					</label>
+				</div>
+				<p class="help-block"><a href="#">¿No puedes acceder a tu cuenta?</a></p>
+			</div>
+
+		</form>
+
+	</div>
+
+</body>
+</html>

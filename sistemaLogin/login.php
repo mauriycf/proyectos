@@ -6,6 +6,23 @@
 </head>
 <body>
 
+	<?php 
+/*
+		session_start();
+		include 'comprueba_login.php';
+
+		if(!isset($_SESSION["usuario"])){
+
+			echo "";
+
+		}else{
+
+			echo '<script> window.location="login.php"; </script>';
+
+		}
+*/
+	 ?>
+
 	<style>
 		h1{
 			text-align: center;

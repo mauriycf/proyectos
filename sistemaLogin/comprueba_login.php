@@ -22,7 +22,11 @@ try{
 
 	if ($numero_registro != 0) {
 		
-		echo "<h2>Inicio de sesion Correcto!!!</h2>";
+		session_start();
+
+		$_SESSION["usuario"]=$_POST["login"];
+
+		header("Location:usuarios_registrado.php");
 
 	}else{
 
