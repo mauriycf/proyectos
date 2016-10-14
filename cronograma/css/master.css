@@ -1,0 +1,229 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*Tooltip*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+/*######################################################################################################################*/
+
+/*QR Codigo*/
+
+.qr{
+    max-width: 60%;
+    margin: auto;
+    height: 400px;
+    background: black;
+    display: flex;
+}
+
+.qr .container{
+    background: lightgray;
+    max-width: 500px;
+}
+
+/*************************************************************************************/
+
+.container-tbl{
+	max-width: 1220px;
+    display: flex;
+	margin: auto;
+}
+.container .carousel-inner .item img{
+    width: 600px;
+    height: 345px;
+}
+
+.tbl-tdrl{
+    background: lightgray;
+}
+
+.tbl_thead{
+	background: lightgray;
+	color: #333;
+	padding: 20px;
+	font-size: 25px;
+}
+
+.carousel{
+    margin-bottom: 20px;
+}
+
+.map{
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px solid black;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.tbl-td{
+	background: lightgray;
+	color: #333;
+	width: 120px;
+}
+
+.tbl-tdr{
+	text-align: center;
+    font-size: 17px;
+    justify-content: center;
+    width: 50%;
+}
+
+.tbl-tdr:hover{
+	background: #1F736A;
+	color: #fff;
+	box-shadow: 2px 2px 5px #111;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.jumbotron .container{
+	background: #60A6D7;
+	padding: 60px;
+	width: 100%;
+	margin-top: -60px;
+}
+
+.jumbotron .container h1, p{
+	color: #fff;
+}
+
+.jumbotron .container .text-jumb h1, p{
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+}
+
+.jumbotron .container .text-jumb p{
+    font-size: 60px;
+}
+
+.jumbotron .container img{
+    float: left;
+    width: 15%;
+}
+
+.footer {
+	background: #22A7F0;
+	color: #fff;
+	padding: 60px;
+	text-align: center;
+    font-size: 20px;
+}
+
+.footer .social [class^="icon"]{
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+	margin-left: 45px;
+	transition: 0.5s;
+}
+
+.footer .social [class^="icon"]:hover{
+	background: #fff;
+	color: lightblue;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	transition: 0.5s;
+}
+
+.img img{
+	width: 100%;
+}
+
+.twitter{
+	background: #333;
+    margin-left: 15px;
+    display: flex;
+    width: 18%;
+    float: left;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.twitter .twitter-timeline{
+
+}
+
+.twitter .twitter-hashtag-button{
+    margin-top: 250px;
+    display: flex;
+}
+
+
+@media(max-width: 480px){
+    .footer .social [class^="icon"]{
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .twitter .twitter-timeline{
+        margin: 0;
+        padding: 0;
+    }
+    .twitter{
+        max-width: 100%;
+    }
+    .container-tbl{
+        max-width: auto;
+        display: block
+    }
+    .footer p{
+        font-size: 15px;
+    }
+    
+    .jumbotron .container .text-jumb h1{
+        font-size: 50px;
+    }
+    .jumbotron .container .text-jumb p{
+        font-size: 20px;
+    }
+    .jumbotron .container img{
+        width: 70%;
+        text-align: center;
+    }
+    .container .carousel{
+        display: none;
+    }
+    .tbl-tdr{
+        font-size: 13px;
+    }
+    .tbl-ld{
+        font-size: 20px;
+    }
+    .tbl-tdr:hover{
+	background: #1F736A;
+	color: #fff;
+	box-shadow: 2px 2px 5px #111;
+    transition: 0.5s;
+    font-size: 13px;
+}
+    
+}
