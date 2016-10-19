@@ -2,29 +2,7 @@
 	padding: 0;
 	margin: 0;
 }
-/*Tooltip*/
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-}
 /*######################################################################################################################*/
 
 /*QR Codigo*/
@@ -44,30 +22,18 @@
 
 /*************************************************************************************/
 
-.container-tbl{
-	max-width: 1220px;
-    display: flex;
-	margin: auto;
-}
+/*Estilos del Carousel*/
+
 .container .carousel-inner .item img{
-    width: 600px;
+    width: 1140px;
     height: 345px;
-}
-
-.tbl-tdrl{
-    background: lightgray;
-}
-
-.tbl_thead{
-	background: lightgray;
-	color: #333;
-	padding: 20px;
-	font-size: 25px;
 }
 
 .carousel{
     margin-bottom: 20px;
 }
+
+/*Estilos del mapa*/
 
 .map{
     border-radius: 20px;
@@ -76,26 +42,7 @@
     margin: auto;
 }
 
-.tbl-td{
-	background: lightgray;
-	color: #333;
-	width: 120px;
-}
-
-.tbl-tdr{
-	text-align: center;
-    font-size: 17px;
-    justify-content: center;
-    width: 50%;
-}
-
-.tbl-tdr:hover{
-	background: #1F736A;
-	color: #fff;
-	box-shadow: 2px 2px 5px #111;
-    transition: 0.5s;
-    font-size: 20px;
-}
+/*Estilos del Jumbotron*/
 
 .jumbotron .container{
 	background: #60A6D7;
@@ -111,17 +58,48 @@
 .jumbotron .container .text-jumb h1, p{
     width: 100%;
     text-align: center;
-    font-size: 90px;
+    font-size: 50px;
 }
 
 .jumbotron .container .text-jumb p{
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .jumbotron .container img{
     float: left;
     width: 15%;
 }
+
+.jumbotron .container .text-jumb nav{
+    max-width: 60%;
+  
+    background: #333;
+}
+
+.jumbotron .container .text-jumb nav ul{
+    list-style: none;
+}
+.jumbotron .container .text-jumb nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    float: left;
+    display: flex;
+    padding: 10px 15px;
+    margin-left: 20px;
+    background: #black;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.jumbotron .container .text-jumb nav ul li a:hover{
+    background: #22A7F0;
+    box-shadow: 5px 5px 10px #333;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+/*Estilos del footer*/
 
 .footer {
 	background: #22A7F0;
@@ -159,25 +137,50 @@
 	width: 100%;
 }
 
+/*Estilos del Twitter*/
+
+.ocultar{
+    max-width: 1%;
+    margin: auto;
+    display: flex;
+}
+
+.ocultar a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+    background: #333;
+    font-size: 25px;
+    border-radius: 50px;
+}
+
+.ocultar a:hover{
+    background: #fff;
+    color: #60A6D7;
+}
+
 .twitter{
 	background: #333;
     margin-left: 15px;
     display: flex;
-    width: 18%;
-    float: left;
+    max-width: 15%;
+    margin: auto;
     border-radius: 30px;
     border: 2px solid black;
 }
 
 .twitter .twitter-timeline{
-
+    margin: auto;
+    padding: 0;
 }
 
 .twitter .twitter-hashtag-button{
-    margin-top: 250px;
-    display: flex;
+    border-radius: 30px;
 }
 
+/*Estilos responsivos*/
 
 @media(max-width: 480px){
     .footer .social [class^="icon"]{
@@ -193,7 +196,7 @@
     }
     .container-tbl{
         max-width: auto;
-        display: block
+        display: block;
     }
     .footer p{
         font-size: 15px;
@@ -224,6 +227,65 @@
 	box-shadow: 2px 2px 5px #111;
     transition: 0.5s;
     font-size: 13px;
+    }    
+    .jumbotron .container .text-jumb nav ul li a:hover{
+    background: #22A7F0;
+    box-shadow: 5px 5px 10px #333;
+    font-size: 18px;
+    transition: 0.5s;
+    }
 }
-    
+
+/*EStilos de la tabla*/
+
+.container-tbl{
+	max-width: 1220px;
+    display: flex;
+	margin: auto;
 }
+.tbl-tdrl{
+    background: lightgray;
+}
+.tbl_thead{
+	background: #60A6D7;
+	color: #fff;
+	padding: 20px;
+	font-size: 25px;
+}
+.tbl-td{
+	background: lightgray;
+	color: #333;
+	width: 120px;
+}
+.tbl-tdr{
+	text-align: center;
+    font-size: 17px;
+    justify-content: center;
+    width: 50%;
+}
+.tbl-tdr:hover{
+	background: #60A6D7;
+	color: #fff;
+	box-shadow: 2px 2px 5px #111;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+/*Google maps Style Sticker*/
+
+.container .googleMap .map-parrafo{
+    font-size: 12px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+

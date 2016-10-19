@@ -17,8 +17,24 @@
       margin: auto;
             }
   </style>
+  
+  <script>
+
+function muestra_oculta(id){
+if (document.getElementById){ //se obtiene el id
+var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+}
+}
+window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre de la etiqueta DIV que deseamos mostrar */
+}
+</script>
+  
 </head>
 <body>
+
+<!--Jumbotron-->
 
 <div class="jumbotron">
 	<div class="container">
@@ -26,69 +42,41 @@
         <div class="text-jumb">
             <h1>IVIC</h1>
             <p>Instituto Venezolano de Investigaciones Científicas</p>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a id="codigoqr" href="#">Código Qr</a></li>
+                        <li><a id="cro" href="#">Cronograma</a></li>
+                        <li><a id="mapa" href="#">Dirección del IVIC</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 	</div>
 </div>
 
-<div class="qr">
+<!-- QR -->
+
+<div class="qr" id="enlace-1">
     <div class="container">
         
     </div>
 </div>
 
-<div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+<!--Twitter-->
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="images/drones.jpg" style="width=460; height=345;">
-      </div>
+<div class="ocultar"><a class="icon-twitter" onclick="muestra_oculta('contenido_a_mostrar')">Twitter</a></div>
 
-      <div class="item">
-        <img src="images/hardware-empresarial1-738x355.jpg" style="width=460; height=345;">
-      </div>
-    
-      <div class="item">
-        <img src="images/Ivic.jpg" style="width=460; height=345;">
-      </div>
-
-      <div class="item">
-        <img src="images/marketing-en-empresa.jpg" style="width=460; height=345;">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<div class="twitter">
+<div id="contenido_a_mostrar" class="twitter">
            <a class="twitter-timeline" data-width="360" data-height="600" href="https://twitter.com/Mauricioxls">Tweets by Mauricioxls</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
              <a href="https://twitter.com/intent/tweet?button_hashtag=GiraEconomica" class="twitter-hashtag-button" data-related="Mauricioxls">Tweet #GiraEconomica</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
-    
-        
 
+<!--Contenedor de tabla-->
 
-<div class="container-tbl">
+<div class="container-tbl" id="enlace-2">
 	<table class="table table-bordered table-hover">
 		<thead class="tbl_thead">
 			<tr class="tbl-ld">
@@ -115,7 +103,7 @@
 			<tr class="tbl-tr">
 				<td class="tbl-td">12:00 AM</td>
 				<td class="tbl-tdr">Almuerzo</td>
-				<td class="tbl-tdr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quibusdam deleniti a voluptate nesciunt, asperiores cumque et porro eveniet, vel.</td>
+				<td class="tbl-tdrl"></td>
 			<tr class="tbl-tr">
 				<td class="tbl-tde">01:30 a 2:00 PM</td>
 				<td class="tbl-tdr">Conferencia</td>
@@ -147,13 +135,15 @@
 				<td class="tbl-tdr">INFRAESTRUCTURA DE DATOS ESPACIALES PARA EL SEGUIMIENTO Y CONTROL DE LA PRODUCCIÓN AGRÍCOLA EN VENEZUELA</td>
 			</tr>
 			<tr class="tbl-tr">
-				<td class="tbl-td">05:20 a 05:50 PM</td>
+				<td class="tbl-tde">05:20 a 05:50 PM</td>
 				<td class="tbl-tdr">Conferencia</td>
 				<td class="tbl-tdr">ENFOQUE POLÍTICO DE LA HERRAMIENTA CIENTÍFICO TECNOLÓGICA PARA LA REPÚBLICA BOLIVARIANA DE VENEZUELA</td>
             </tr>
 		</tbody>
 	</table>
 </div>
+
+<!--Contenedor de segunda tabla-->
 
 <div class="container-tbl">
 	<table class="table table-bordered table-hover">
@@ -214,7 +204,7 @@
 				<td class="tbl-tdrl"></td>
 			</tr>
 			<tr class="tbl-tr">
-				<td class="tbl-td">06:00</td>
+				<td class="tbl-tde">06:00</td>
 				<td class="tbl-tdr">Clausura</td>
 				<td class="tbl-tdrl"></td>
             </tr>
@@ -222,21 +212,92 @@
 	</table>
 </div>
 
+<!--Carousel-->
 
-<h1 style="width:100%; margin:auto; text-align:center;">Direccion del IVIC</h1>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/drones.jpg" style="width=460; height=345;">
+      </div>
+
+      <div class="item">
+        <img src="images/hardware-empresarial1-738x355.jpg" style="width=460; height=345;">
+      </div>
+    
+      <div class="item">
+        <img src="images/Ivic.jpg" style="width=460; height=345;">
+      </div>
+
+      <div class="item">
+        <img src="images/marketing-en-empresa.jpg" style="width=460; height=345;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!--Google Maps-->
+
+<h2 style="width:100%; margin:auto; text-align:center;">Direccion del IVIC</h1>
 
 <div class="map" id="map" style="width:100%;height:500px"></div>
 
+<!-- Configuracion y Script del Google Maps -->
+
 <script>
 function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), 
-    zoom: 10
-  }
-  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var uluru = {lat: 10.396248, lng: -66.976504};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: uluru
+  });
+    
+    var contentString = '<div class="container">'+
+    '<div class="googleMap">'+
+        '<h2 class="map-titulo">IVIC - Instituto Venezolano de Investigaciones Científicas</h2>'+
+        '<p style="font-size: 12px; color: black;">El Instituto Venezolano de Investigaciones Científicas (IVIC)</p>'+
+        '<p style="font-size: 12px; color: black;">es un organismo autónomo adscrito al Ministerio del Poder Popular para la Educación Universitaria, Ciencia y Tecnología (MppEUCT) de la República Bolivariana de Venezuela.</p>'+
+        '<p style="font-size: 12px; color: black;"> El IVIC tiene como misión generar conocimiento a través de la investigación científica básica y aplicada, el desarrollo tecnológico y la formación de talento humano de alto nivel en Venezuela. </p>'+
+        '<p style="font-size: 12px; color: black;">Durante más de cincuenta años ha servido de fuente de acopio informativo en el área y es reconocido, nacional e internacionalmente, como un importante centro de asesoramiento, consulta y facilitador de servicios en las ramas de las ciencias físicas, químicas, biológicas, médicas, matemáticas, ciencias sociales, entre otras.</p>'+
+    '</div>'+
+'</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    title: 'Uluru (Ayers Rock)'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
 }
 </script>
+
+<!--Footer de la pagina-->
 
 <div class="footer">
 	<footer>
@@ -249,6 +310,40 @@ function myMap() {
 	</footer>
 </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<!-- Script Del GoogleMaps -->
+   
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJipr2dE4kvWlkWfZ_fkNKD5kWC9UpnQI&callback=myMap"
+  type="text/javascript"></script>
+  <script>     
+
+    $(function () {
+        $("#mapa").click(function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $("#map").offset().top
+            }, 2000);
+        });
+    })
+    
+    $(function () {
+        $("#codigoqr").click(function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $("#enlace-1").offset().top
+            }, 2000);
+        });
+    })
+    
+    $(function () {
+        $("#cro").click(function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $("#enlace-2").offset().top
+            }, 2000);
+        });
+    })
+    
+    
+     </script>
 </body>
 </html>
