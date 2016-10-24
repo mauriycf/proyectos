@@ -29,6 +29,7 @@ body{
   text-decoration: none;
   color: #333;
   font-size: 20px;
+  transition: 0.5s;
 }
 
 .navbar .lista-menu .titulo-menu{
@@ -147,6 +148,10 @@ body{
 .info-pagina .info-container .row .col p{
   font-size: 20px;
   margin-left: 80px;
+  margin-top: 20px;
+}
+
+#info-pagina2{
   margin-top: 20px;
 }
 

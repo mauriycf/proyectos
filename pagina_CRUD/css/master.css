@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*Estilos de la tabla*/
+
+.container-tbl{
+  max-width: 800px;
+  padding: 20px;
+}
+
+.container-tbl .table{
+  border: 2px solid #333;
+}
+
+.container-tbl .table thead tr th{
+  background: #333;
+  color: #fff;
+}
+
+.container-tbl .table tbody tr .tdr{
+  background: #333;
+  color: #fff;
+}
+
+.container-tbl .table tbody tr .tdr:hover{
+  background: #fff;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.container-tbl .table tbody tr .tdr input{
+  padding: 5px 10px;
+  background: #fff;
+  color: #111;
+}
+
+.container-tbl .table .tbl_down{
+  background: #333;
+  color: #111;
+}

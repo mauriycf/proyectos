@@ -1,0 +1,251 @@
+/*Reseteo Universal*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*Estilos generales*/
+
+body{
+  width: 100%;
+  background: #E8E8E8;
+}
+
+/*Menu*/
+
+.menu{
+  width: 100%;
+  height: 60px;
+  background: #444343;
+}
+
+.menu .menu-ul{
+  width: 960px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+
+.menu .menu-ul .redes-sociales ul{
+  list-style: none;
+  display: flex;
+  margin-left: 420px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  padding: 17px 22px;
+  display: block;
+  font-size: 18px;
+  color: #AEADAD;
+  transition: 0.5s;
+}
+
+.menu .menu-ul li a:hover{
+  color: #F2B1AF;
+  transition: 0.8s;
+}
+
+.menu .menu-ul .redes-sociales li .icon-facebook:hover{
+  color: #686df9;
+}
+.menu .menu-ul .redes-sociales li .icon-twitter:hover{
+  color: #54c9f7;
+}
+.menu .menu-ul .redes-sociales li .icon-vine:hover{
+  color: #3feabc;
+}
+
+/*Estilos Del jumbotron*/
+
+.jumbotron{
+  width: 100%;
+  background: #FC736B;
+  height: 340px;
+}
+
+.jumbotron .jumbotron-container{
+  width: 100%;
+  height: 340px;
+  position: absolute;
+  box-shadow: 2px 2px 4px #333;
+}
+
+.jumbotron .jumbotron-container .titulo-jumbotron{
+  font-size: 75px;
+  max-width: 100%;
+  color: #fff;
+}
+
+.jumbotron .jumbotron-container .text-jumbotron{
+  font-size: 25px;
+  margin-left: 110px;
+  font-style: italic;
+  max-width: 100%;
+  color: #fff;
+}
+
+.jumbotron .jumbotron-container .texto{
+  max-width: 960px;
+  margin: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/*estilos del main-container*/
+
+.main-container{
+  background: #fff;
+  width: 980px;
+  margin: auto;
+  padding: 20px 30px;
+}
+
+/*estilos del container-info*/
+
+.main-container .container-info{
+  width: 641px;
+  display: block;
+  padding: 10px;
+}
+
+.main-container .container-info .row{
+    border: 2px solid #E8E8E8;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.main-container .container-info .row h2{
+  color: #FC736B;
+  font-size: 24px;
+}
+
+.main-container .container-info .row .col p{
+  color: #111;
+  padding: 20px;
+  text-align: justify;
+}
+
+.main-container .container-info .row .col img{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.main-container .container-info .row .col a{
+  padding: 5px 35px;
+  background: #FC736B;
+  border: 4px solid #f7443b;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.main-container .container-info .row .col a:hover{
+  background: #f7443b;
+  border: 4px solid #FC736B;
+  transition: 0.5s;
+}
+
+/*Estilos del aside*/
+
+.main-container .aside{
+  display: flex;
+  float: right;
+  width: 250px;
+  margin-top: -3750px;
+}
+
+.main-container .aside .row .col{
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.main-container .aside .row .col p{
+  margin-top: 15px;
+}
+
+/*Estilos Del footer*/
+
+.footer{
+  margin-top: 100px;
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer .social [class^="icon"]{
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 50px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.footer .social [class^="icon"]:hover{
+	background: rgba(0,0,0,0.5);
+}
+
+.footer .social .icon-facebook:hover{
+  color: #556efc;
+  transition: 0.5s;
+}
+
+.footer .social .icon-twitter:hover{
+  color: #54cdf9;
+  transition: 0.5s;
+}
+.footer .social .icon-gplus:hover{
+  color: #E62117;
+  transition: 0.5s;
+}
+.footer .social .icon-vine:hover{
+  color: #54f9b5;
+  transition: 0.5s;
+}
+
+@media(max-width: 480px){
+  .logo, .icon-menu{
+  	margin: 5px;
+  	color: #fff;
+  }
+
+  ul li:hover{
+  	-webkit-box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+  	box-shadow: 0 0px 15px 0.1px rgba(0,0,0,0.7);
+  	-webkit-transform: scale(1.003);
+      -ms-transform: scale(1.003);
+  	transform: scale(1.003);
+  }
+
+  .icon-menu{
+  	display: block;
+  	width: 40px;
+  	height: 40px;
+  	font-size: 30px;
+  	background: #043D22;
+  	text-align: center;
+  	line-height: 45px;
+  	border-radius: 5px;
+  	margin-left: auto;
+  	cursor: pointer;
+  }
+  .icon-menu:hover{
+  	-webkit-box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+  	box-shadow: 0 0px 15px 0.1px rgba(0,0,0,0.7);
+  	-webkit-transform: scale(1.003);
+      -ms-transform: scale(1.003);
+  	transform: scale(1.003);
+  }
+}
