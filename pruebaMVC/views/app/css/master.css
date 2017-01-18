@@ -1,0 +1,259 @@
+/*Reseteo Universal*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Estilos General*/
+
+body{
+	max-width: 100%;
+}
+
+/* estilos del navbar*/
+
+.navbar{
+	max-width: 100%;
+	background: #222222;
+}
+
+.navbar .lista-menu, .lista-li, .redes-sociales{
+	max-width: 960px;
+	margin: auto;
+	display: flex;
+	list-style: none;
+}
+
+.navbar .lista-menu li a{
+	padding: 15px 20px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	transition: 0.5s;
+}
+
+.navbar .lista-menu .titulo-menu{
+	font-size: 18px;
+}
+
+.navbar .lista-menu .lista-li li a:hover{
+	color: #666666;
+	transition: 0.5s;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales{
+	padding-left: 80px;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales li a{
+	padding: 2px 5px;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales li .icon-facebook:hover{
+  color: #556efc;
+  transition: 0.5s;
+}
+.navbar .lista-menu .lista-li .redes-sociales li .icon-twitter:hover{
+  color: #54cdf9;
+  transition: 0.5s;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales li .icon-vine:hover{
+  color: #54f9b5;
+  transition: 0.5s;
+}
+
+/*Estilos del jumbotron*/
+
+.jumbotron{
+	height: 450px;
+	width: 100%;
+	background: #444444;
+}
+
+.jumbotron .jumbotron-caja{
+	width: 650px;
+	height: 400px;
+	margin: auto;
+}
+
+.jumbotron .jumbotron-caja .jumbotron-caja2{
+	width: 500px;
+	padding: 20px;
+	margin: auto;
+}
+
+.jumbotron .jumbotron-caja .jumbotron-titulo{
+	color: #fff;
+	font-size: 50px;
+	margin: auto;
+}
+
+.jumbotron .jumbotron-caja .jumbotron-info{
+	font-size: 18px;
+	color: #fff;
+	padding-bottom: 45px;
+}
+
+.jumbotron .jumbotron-caja .jumbotron-caja1{
+	width: 200px;
+	padding-top: 70px;
+	margin: auto;
+}
+
+.jumbotron .jumbotron-caja .jumbotron-boton{
+	width: 250px;
+	margin: auto;
+	list-style: none;
+}
+
+.jumbotron .jumbotron-caja .jumbotron-boton li a{
+	text-decoration: none;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #fff;
+	font-size: 20px;
+	border-radius: 8px;
+	color: #333;
+	transition: 0.5s;
+}
+
+.jumbotron .jumbotron-caja .jumbotron-boton li a:hover{
+	background: rgba(255, 255, 255, 0.5);
+	transition: 0.5s;
+}
+
+/* Estilos de informacion */
+
+.informacion{
+	background: #0090CF;
+	width: 100%;
+	height: 262px;
+}
+
+.informacion .row{
+	max-width: 960px;
+	margin: auto;
+	padding-top: 50px;
+	display: flex;
+}
+
+.informacion .row .col .informacion-img img{
+	display: flex;
+	float: left;
+	background: #fff;
+	padding: 10px;
+	border-radius: 50%;
+	text-align: justify;
+	transition: 0.5s;
+}
+
+.informacion .row .col .informacion-img img:hover{
+	box-shadow: 5px 5px 10px #333;
+}
+
+.informacion .row .col .informacion-titulo h4,h2, .informacion-parrafo{
+	display: flex;
+	color: #fff;
+	padding-left: 15px;
+}
+
+.informacion .row .col .informacion-titulo h4{
+	font-size: 25px;
+}
+
+.informacion .row .col .informacion-titulo h2{
+	font-size: 35px;
+}
+
+.informacion .row .col .informacion-parrafo{
+	padding-top: 15px;
+}
+
+.informacion .row .col ul{
+	display: flex;
+	padding-top: 20px;
+	padding-left: 260px;
+	list-style: none;
+	height: 80px;
+}
+
+.informacion .row .col ul li a{
+	padding: 10px 10px;
+	display: block;
+	text-decoration: none;
+	margin-left: 5px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.informacion .row .col ul li .rojo{
+	background: #f24141;
+	transition: 0.5s;
+}
+
+.informacion .row .col ul li .verde{
+	background: #7dd347;
+	transition: 0.5s;
+}
+
+.informacion .row .col ul li .rojo:hover{
+	background: #B85958;
+	transition: 0.5s;
+}
+
+.informacion .row .col ul li .verde:hover{
+	background: #7CB859;
+	transition: 0.5s;
+}
+
+/*Estilos del footer*/
+
+.footer{
+  margin-top: 100px;
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer .social [class^="icon"]{
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 50px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+    margin: 20px;
+}
+
+.footer .social [class^="icon"]:hover{
+	background: rgba(0,0,0,0.5);
+}
+
+.footer .social .icon-facebook:hover{
+  color: #556efc;
+}
+
+.footer .social .icon-twitter:hover{
+  color: #54cdf9;
+}
+.footer .social .icon-gplus:hover{
+  color: #E62117;
+}
+.footer .social .icon-vine:hover{
+  color: #54f9b5;
+}
+
+/* Css login*/
+
+.formulario{
+	background: #333;
+}
